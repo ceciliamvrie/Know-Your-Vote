@@ -1,10 +1,22 @@
 {
   "intents": [
     {
-      "intent": "PollResultsIntent"
+      "intent": "CandidateVotesIntent",
+	 "slots": [
+        {
+          "name": "Candidate",
+          "type": "LIST_OF_CANDIDATES"
+        }
+      ]
     },
     {
-      "intent": "FindCandidatesIntent"
+      "intent": "CandidateBioIntent",
+	"slots": [
+        {
+          "name": "Candidate",
+          "type": "LIST_OF_CANDIDATES"
+        }
+      ]
     },
     {
       "intent": "PoliticalPartiesIntent",
@@ -16,7 +28,7 @@
       ]
     },
     {
-      "intent": "CandidateSupportersIntent",
+      "intent": "CandidateRatingIntent",
       "slots": [
         {
           "name": "Candidate",
